@@ -49,11 +49,11 @@ def shortener(string):
     answ = ''
     for el in k1:
         if len(str(el)) <= 6:
-            answ += str(el) + ' '
+            answ = " ".join(str(el))
         else:
             el1 = str(el)[:6] + '* '
-            answ += el1
-    return answ[:-1]
+            answ = " ".join(str(el1))
+    return answ
 
 
     #  ...wite your code here
